@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minin Whatsapp Model Clone Small</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h3>All Chats</h3>
+    <form action="/chats/new" method="GET">
+        <br>
+        <button id="new">New Chat</button>
+        <br>
+    </form>
+<%for(let chat of chats){%>
+    <div class="chat">
+        <form action="/chats/<%=chat._id%>/edit" method="GET">
+            <button id="edit">Edit Chat</button>
+        </form>
+        <br>
+        <form action="/chats/<%=chat._id%>?_method=DELETE" method="POST">
+            <button id="delete">Delete</button>
+        </form>
+        
+        <p>From:<%=chat.from%></p>
+        <div class="msg">
+            <p><%=chat.msg%></p>
+        </div>
+        <p>Received By:<%=chat.to%></p>
+    </div>
+    <p id="date"><%=chat.createAt.toString().split(" ")[4]%></p>
+    <p id="date"><%=chat.createAt.toString().split(" ").slice(0,4).join("-")%></p>
+    <hr>
+    
+<%}%>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

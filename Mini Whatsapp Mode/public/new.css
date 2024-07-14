@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background-image:url("https://png.pngtree.com/background/20230525/original/pngtree-colorful-emoji-balls-and-smiling-faces-picture-image_2730830.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+h3{
+    color:rgb(252, 252, 252);
+    font-size: 50px;
+    /* background-color: yellow; */
+    display: inline-block;
+    background-color: rgba(32, 138, 237, 0.71);
+    border-radius: 10px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    
+
+}
+input{
+    height: 30px;
+    margin-left: 3rem;
+    background-color: rgb(209, 224, 230);
+    padding: 20px;
+    border:2px solid lightblue;
+    border-radius: 10px;
+}
+textarea{
+    margin-left: 3rem;
+    height: 200px;
+    width: 300px;
+}
+#create{
+    font-size: 18px;
+    border-radius: 10px;
+    width: 130px;
+    padding: 18px;
+    background-color: rgba(41, 156, 243, 0.756);
+    margin-left: 3rem;
+    margin-top: 1rem;
+    border:1px solid rgb(9, 124, 224);
+    color:black;
+    font-weight: bolder;   
+}
+#create:hover{
+    background-color: rgb(108, 193, 241);
+    cursor: pointer;
+    border:2px solid rgb(121, 189, 245);
+}
